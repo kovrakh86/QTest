@@ -1,0 +1,52 @@
+﻿body {
+    box-sizing: border-box;
+    min-height: 100vh;
+    border-top: 50px solid #043366;
+    border-bottom: 50px solid #043366;
+    font: 16px/1 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: #F5F5F5;
+    color: #333;
+    margin: 0;
+}
+
+.view-list-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 100px;
+}
+
+.title {
+    padding: 5px;
+    margin-bottom: 5px;
+    border-bottom: 2px solid #1365be;
+}
+
+.views-list {
+    list-style: none;
+}
+
+.views-list .view {
+    display: flex;
+    align-items: center;
+}
+
+.views-list .view:before {
+    width: 5px;
+    height: 5px;
+    margin-right: 10px;
+    background-color: #1365be;
+    border-radius: 50%;
+    content: "";
+}
+
+.views-list .view a {
+    font-size: 1em;
+    padding: 5px 0;
+    color: #1365be;
+    text-decoration: none;
+}
+
+.views-list .view a:hover {
+    font-size: 1.125em;
+    text-decoration: underline;
+}

@@ -1,0 +1,41 @@
+.int-pagination{
+    margin: 0 auto;
+}
+.int-pagination__button {
+    display: inline-block;
+    border: none;
+    padding: 1rem 2rem;
+    margin: 0;
+    background: $white-color;
+    color: $main-theme-color;
+    font-family: sans-serif;
+    font-size: 1.4rem;
+    border: 1px solid $main-theme-color;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    transition: background 250ms ease-in-out, transform 150ms ease;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    &:hover {
+        transform: scale(.95);
+    }
+}
+.int-pagination__button--prev :before{
+    display: inline-block;
+    transform: rotate(45deg);
+    content: " ";
+    height: 1rem;
+    width: 1rem;
+    border-bottom: 1px solid $main-theme-color;
+    border-left: 1px solid $main-theme-color;
+}
+.int-pagination__button--next :after{
+    display: inline-block;
+    transform: rotate(45deg);
+    content: " ";
+    height: 1rem;
+    width: 1rem;
+    border-top: 1px solid $main-theme-color;
+    border-right: 1px solid $main-theme-color;
+}

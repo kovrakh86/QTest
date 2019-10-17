@@ -1,0 +1,29 @@
+@import "../../../scss/variables";
+@import "../../../scss/mixins";
+@import "./_base";
+
+.pcg-rte-wrapper {
+    @include pcg-rte-wrapper-base() {
+        //only for front-end
+        img.pcg-align-right,
+        img.pcg-align-left,
+        img.pcg-align-center,
+        table.pcg-align-right,
+        table.pcg-align-left,
+        table.pcg-align-center {
+            @include media-breakpoint-down(sm) {
+                display: block;
+                height: auto;
+                float: none !important;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+
+        table.pcg-align-right,
+        table.pcg-align-left,
+        table.pcg-align-center {
+            display: table;
+        }
+    }
+}

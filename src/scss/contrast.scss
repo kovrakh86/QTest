@@ -1,0 +1,80 @@
+@import "variables";
+@import "mixins";
+
+body {
+    background-color: $contrast-alt-bg!important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: $contrast-alt-color !important;
+}
+
+.pcg-contrast {
+    &__bg-main {
+        background-color: $contrast-main-bg !important;
+    }
+
+    &__bg-alt {
+        background-color: $contrast-alt-bg !important;
+    }
+
+    &__bg-extra {
+        background-color: $contrast-extra-bg !important;
+    }
+
+    &__color-main,
+    &__color-main--before:before,
+    &__color-main--after:after {
+        color: $contrast-main-color !important;
+    }
+
+    &__color-alt,
+    &__color-alt--before:before,
+    &__color-alt--after:after {
+        color: $contrast-alt-color !important;
+    }
+
+    &__color-extra,
+    &__color-extra--before:before,
+    &__color-extra--after:after {
+        color: $contrast-extra-color !important;
+    }
+
+    &__border-main {
+        border-color: $contrast-main-color !important;
+    }
+
+    &__border-alt {
+        border-color: $contrast-alt-color !important;
+    }
+
+    &__link {
+        color: $contrast-main-color !important;
+        text-decoration: underline !important;
+
+        &:hover,
+        &:focus {
+            color: $contrast-alt-color !important;
+            text-decoration: none !important;
+        }
+    }
+
+    &__link-hovered {
+        color: $contrast-main-color !important;
+        text-decoration: underline !important;
+
+        &:hover,
+        &:focus {
+            color: $contrast-main-bg !important;
+            text-decoration: none !important;
+            background-color: $contrast-main-color !important;
+        }
+    }
+}
+
+@import "../views/components/rte/contrast";

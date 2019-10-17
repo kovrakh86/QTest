@@ -1,0 +1,25 @@
+{{#extend "_master-layout"}}
+    {{#content "body"}}
+        {{#block "header"}}
+            {{> ../../components/header/header}}
+        {{/block}}
+        <main class="pcg-main-content" id="maincontent">
+            {{#block "main-content"}}
+
+            {{/block}}
+        </main>
+        {{#block "footer"}}
+            <!--<div class="">-->
+                {{> ../../components/footer/footer}}
+            <!--</div>-->
+
+        {{/block}}
+    {{/content}}
+    {{#content "scripts" mode="append"}}
+        <!--<script type="text/javascript">-->
+            <!--$jquery(function() {-->
+                <!--("time.timeago").timeago();-->
+            <!--});-->
+        <!--</script>-->
+    {{/content}}
+{{/extend}}

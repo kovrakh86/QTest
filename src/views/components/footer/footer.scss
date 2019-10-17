@@ -1,0 +1,37 @@
+.int-footer{
+    max-width: $page-max-width;
+}
+.int-footer>div{
+    padding: 0;
+}
+.int-footer__left{
+    background-color: $submenu-bg;
+}
+.int-footer__top{
+    margin-bottom: 1px;
+}
+.int-footer__top ul, .int-footer__bottom{
+    padding: 1em 0;
+    list-style: none;
+}
+.int-footer_items{
+     padding: 0;
+    text-align: center;
+ }
+.int-footer__items-link{
+    color: $font-dark;
+    font-size: 1.1rem;
+    font-weight: 600;
+    &:hover{
+        color: $grey-color;
+    }
+}
+
+.int-footer__rights{
+    color: $font-dark;
+    font-size: 1.1rem;
+    margin: 0;
+    padding: 0;
+}
+
+

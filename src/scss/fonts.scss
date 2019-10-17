@@ -1,0 +1,31 @@
+//@import "../fonts/fontello/css/fontello";
+//@font-face {
+//    font-family: 'Fontello';
+//    src: url(../fonts/fontello-icons/font/fontello.woff),
+//         url(../fonts/fontello-icons/font/fontello.woff2);
+//}
+@import "../fonts/fontello-icons/css/fontello.css";
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/open-sans/open-sans-v17-latin-regular.woff') format('woff'),
+        url('../fonts/open-sans/open-sans-v17-latin-regular.woff2') format('woff2');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/open-sans/open-sans-v17-latin-600.woff') format('woff'),
+        url('../fonts/open-sans/open-sans-v17-latin-600.woff2') format('woff2');
+    font-weight: 600;
+}
+@font-face {
+    font-family: 'PT Serif';
+    src: url('../fonts/pt-serif/pt-serif-v11-latin-regular.woff') format('woff'),
+    url('../fonts/pt-serif/pt-serif-v11-latin-regular.woff2') format('woff2');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'PT Serif';
+    src: url('../fonts/pt-serif/pt-serif-v11-latin-700.woff') format('woff'),
+    url('../fonts/pt-serif/pt-serif-v11-latin-700.woff2') format('woff2');
+    font-weight: 700;
+}

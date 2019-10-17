@@ -1,0 +1,96 @@
+// Uncomment if needed
+//@mixin fontello-icon-body($icon-name, $color) {
+//    @extend .#{$icon-name}:before;
+//    @extend [class^="icon-"]:before;
+//    margin: 0;
+//    line-height: 1;
+//    color: $color;
+//    @content;
+//}
+//
+//@mixin fontello-icon-before($icon-name, $color) {
+//    &::before {
+//        @include fontello-icon-body($icon-name, $color);
+//        @content;
+//    }
+//}
+//
+//@mixin fontello-icon-after($icon-name, $color) {
+//    &::after {
+//        @include fontello-icon-body($icon-name, $color);
+//        @content;
+//    }
+//}
+
+@mixin pcg-responsive-block($ratioY: 16, $ratioX: 9, $width: 100) {
+    position: relative;
+    overflow: hidden;
+
+    &:before {
+        content: "";
+        display: block;
+        width: percentage($width/100);
+        padding-top: percentage($ratioX/($ratioY/($width/100)));
+    }
+
+    & > *:first-child {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        //height: 100%;
+    }
+
+    & > img:first-child {
+        // IE doesn't support object-fit: cover, so workaround is used below
+        object-fit: cover;
+        @include pcg-ie-11-only() {
+            transform: none;
+            top: -9999px;
+            right: -9999px;
+            bottom: -9999px;
+            left: -9999px;
+            margin: auto;
+            height: auto;
+            min-width: 100%;
+            min-height: 100%;
+        }
+    }
+}
+
+@mixin pcg-ie-11-only() {
+    //workaround for styles in IE 11 only. Details here: https://stackoverflow.com/questions/20541306/how-to-write-a-css-hack-for-ie-11
+    _:-ms-fullscreen, :root & {
+        @content;
+    }
+}
+
+@mixin hover-focus-active {
+    &:hover,
+    &:active,
+    &:focus {
+        @content;
+    }
+}
+
+@mixin spinner ($width: 16px, $height: 16px, $bgColor: $gray-200, $fgColor: $gray-700) {
+    display: inline-block;
+    content: "";
+    border: 3px solid;
+    border-color: $bgColor;
+    border-top-color: $fgColor;
+    border-radius: 50%;
+    width: $width;
+    height: $height;
+    animation: spinner 1s linear infinite;
+
+    @keyframes spinner {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+}

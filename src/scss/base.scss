@@ -1,0 +1,50 @@
+@import "variables";
+@import "mixins";
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: $font-family-base;
+    font-size: $html-font-size;
+}
+body{
+    background-color: $body-color;
+}
+body>*{
+    max-width: 128rem;
+    margin: 0 auto;
+}
+a {
+    color: $black-color;
+    //text-decoration: underline;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+        color: $white-color;
+        text-decoration: none;
+    }
+
+    // Icon for _blank link
+    // Uncomment if needed
+
+    //&[target="_blank"] {
+    //    @include fontello-icon-after(icon-link-ext, inherit) {
+    //        text-decoration: none;
+    //        margin-left: 0.2rem;
+    //    }
+    //}
+}
+
+img {
+    max-width: 100%;
+}
+.int-icon{
+    font-size: 2.5rem;
+}
+
+

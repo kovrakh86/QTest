@@ -1,0 +1,96 @@
+%contrast-btn {
+    height: 30px;
+    width: 30px;
+    padding: 0;
+}
+
+.pcg-accessibility {
+    @mixin _item() {
+        display: inline-block;
+        cursor: pointer;
+        line-height: 1em;
+        margin: 0 5px 0 0;
+    }
+
+    display: inline-block;
+    color: $black-color;
+
+    %pcg-accessibility__control {
+        font-weight: 700;
+        background: none;
+        border: none;
+    }
+
+    &__title {
+        padding: 0 10px 0 0;
+    }
+
+    &__container {
+        display: inline-block;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    &__item {
+        display: inline-block;
+    }
+
+    &__size {
+        @extend %pcg-accessibility__control;
+        @include _item();
+        padding: 2px;
+        font-family: $font-family-extra;
+        color: $white-color;
+
+        &.xs {
+            font-size: $font-size-sm-xs;
+            line-height: 1;
+        }
+
+        &.sm {
+            font-size: $font-size-sm-xxl;
+            line-height: 1;
+        }
+
+        &.md {
+            font-size: $h5-font-size;
+            line-height: 1;
+        }
+
+        &:hover,
+        &:focus {
+            //color: $t-white-60;
+            outline: none;
+        }
+
+    }
+
+    &__scheme {
+        @extend %pcg-accessibility__control;
+        @include _item();
+        padding: 1px 7px;
+        font-size: $h5-font-size;
+        line-height: 1.2;
+
+        &.contrast {
+            @extend %contrast-btn;
+            background-color: $purple-color;
+            @include fontello-icon-before(icon-eye, $white-color);
+            &:hover,
+            &:focus {
+                outline: none;
+            }
+        }
+
+        &.normal {
+            @extend %contrast-btn;
+            background-color: $white-color;
+            @include fontello-icon-before(icon-eye, $purple-color);
+            &:hover,
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+}

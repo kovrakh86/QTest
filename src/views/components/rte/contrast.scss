@@ -1,0 +1,18 @@
+.pcg-contrast-rte {
+    a {
+        color: $contrast-main-color !important;
+        text-decoration: underline !important;
+
+        &:hover {
+            color: $contrast-main-bg !important;
+            text-decoration: none !important;
+            background-color: $contrast-main-color !important;
+        }
+    }
+
+    p,
+    ol,
+    ul {
+        color: $contrast-main-color !important;
+    }
+}

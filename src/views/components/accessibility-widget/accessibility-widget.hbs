@@ -1,0 +1,34 @@
+<div class="pcg-accessibility d-print-none">
+    <span class="pcg-accessibility__title sr-only">Text size:</span>
+    <ul class="pcg-accessibility__container js-access-widget">
+        <li class="pcg-accessibility__item">
+            <button class="pcg-contrast__link-hovered pcg-accessibility__size xs js-fontsize-normal">A</button>
+        </li>
+        <li class="pcg-accessibility__item">
+            <button class="pcg-contrast__link-hovered pcg-accessibility__size sm js-fontsize-medium">A</button>
+        </li>
+        <li class="pcg-accessibility__item">
+            <button class="pcg-contrast__link-hovered pcg-accessibility__size md js-fontsize-large">A</button>
+        </li>
+        <li class="pcg-accessibility__item">
+            <button class="pcg-contrast__link-hovered pcg-accessibility__scheme normal js-switch-css-normal"></button>
+        </li>
+        <li class="pcg-accessibility__item">
+            <button class="pcg-contrast__link-hovered pcg-accessibility__scheme contrast js-switch-css-contrast">
+            </button>
+        </li>
+    </ul>
+</div>
+
+<script type="text/javascript">
+    $jquery(function () {
+        $jquery.pcg.frontend.accessWidget.init($jquery(".js-access-widget"),
+            {
+                fontSizes: {
+                    normal: "16px",
+                    large: "18px",
+                    largest: "20px"
+                }
+            });
+    });
+</script>

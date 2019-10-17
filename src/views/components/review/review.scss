@@ -1,0 +1,65 @@
+.int-review{
+    padding: 1rem .7rem;
+    background-color: $white-color;
+    @media screen and (min-width: 768px){
+        padding: 1rem 3rem;
+    }
+}
+.int-review__personal-photo{
+    padding: 0;
+    text-align: center;
+    .int-personal-photo__link{
+        display: inline-block;
+        width: 60px;
+        height: 60px;
+        border-radius: 4px;
+        overflow: hidden;
+    }
+}
+.int-review__info{
+    padding-right: 0;
+    @media screen and (min-width: 768px){
+        padding-left: 0;
+    }
+}
+.int-review__info .row>*{
+    padding: 0;
+    color: $font-dark;
+    font-size: 1.2rem;
+}
+.int-review-info__status-name{
+    padding: .4em;
+    border-radius: 4px;
+
+}
+
+ .int-review-info__title-item{
+    color: $blue-color;
+     font-weight:600;
+ }
+.int-review-info__text{
+    font-size: 1.2rem;
+    color: $black-color;
+}
+.int-tags{
+    padding: 0;
+    margin: 0;
+}
+.int-tags__item{
+    list-style-type: none;
+    &:after{
+        content: ', ';
+        padding-right: .1rem;
+    }
+    &:last-child:after{
+        content: '';
+    }
+}
+.int-tags__link{
+    color: $font-dark;
+    font-size: 1.2rem;
+
+}
+.int-tags-icon{
+    color: $font-dark;
+}

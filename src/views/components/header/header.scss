@@ -1,0 +1,82 @@
+.int-header {
+    max-width: $page-max-width;
+    ul{
+        margin: 0;
+        padding: 0 1em ;
+    }
+    &>ul{
+        padding: 1rem;
+    }
+    li{
+        list-style-type: none;
+        padding:0;
+        cursor: pointer;
+    }
+}
+.int-header * {
+    color: $white-color;
+    text-align: center;
+
+    @media screen and (min-width: 768px){
+        color: $grey-color;
+        &:hover{
+            color: $white-color;
+        }
+    }
+}
+
+.int-menu-icon__button{
+    @media screen and (min-width: 768px) {
+          display:none;
+    }
+    &:focus{
+        outline: none;
+    }
+}
+.int-logo{
+    @media screen and (min-width: 768px) {
+        padding-left: 1rem; }
+}
+.int-header__page-title{
+    font-size: 3rem; //3.6
+    font-family: 'Open Sans';
+    font-weight: 400;
+    line-height: 1em;
+}
+
+.int-choose-city *{
+    font-size: 1.4rem;
+    text-decoration: none;
+
+}
+.int-header__personal-photo{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.int-personal-photo__link{
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.int-personal-photo__image{
+    height: 100%;
+}
+.int-personal-photo__name{
+    font-size: 1.4rem;
+}
+.int-nav{
+    padding: 0;
+}
+
+.int-nav__list-item-link{
+    text-decoration: none;
+    line-height: 4rem;
+    font-size: 1.4rem;
+}
+
+

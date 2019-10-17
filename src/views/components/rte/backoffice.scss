@@ -1,0 +1,10 @@
+@import "../../../scss/variables";
+@import "../../../scss/mixins";
+@import "./_base";
+
+.pcg-rte-wrapper--backoffice {
+    @include pcg-rte-wrapper-base() {
+        background-color: $white-color;
+        padding: 10px;
+    }
+}

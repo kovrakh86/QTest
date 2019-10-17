@@ -1,0 +1,25 @@
+.pcg-homepage {
+    &__navigation {
+        padding-top: 2.5rem;
+        padding-bottom: 1rem;
+    }
+}
+.pcg-homepage{
+    max-width: $page-max-width;
+    & *{
+        font-family: "Open Sans", Arial, sans-serif;
+    }
+}
+.pcg-homepage__submenu{
+    background-color: $submenu-bg;
+    padding: 2rem 2rem 2rem 0;
+}
+.pcg-homepage__page{
+    padding: 0;
+}
+
+.pcg-homepage__pagination{
+    text-align: center;
+    background-color: $white-color;
+    padding: 3rem 0;
+}

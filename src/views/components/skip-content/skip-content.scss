@@ -1,0 +1,32 @@
+.pcg-skip-content {
+    height: 0;
+    display: flex;
+    align-items: center;
+    padding-left: 0.5rem;
+    font-size: $font-size-sm-l;
+    color: $white-color;
+    overflow: hidden;
+
+    &::before, &::after {
+        content: '';
+        width: 0;
+        height: 0;
+        border-top: 4px solid transparent;
+        border-bottom: 4px solid transparent;
+        border-left: 5px solid $white-color;
+    }
+
+    &::before {
+        order: -2;
+    }
+
+    &::after {
+        order: -1;
+        margin-right: 0.3rem;
+    }
+
+    @include hover-focus-active() {
+        height: auto;
+        color: $white-color;
+    }
+}

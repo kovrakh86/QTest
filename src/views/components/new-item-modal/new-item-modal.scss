@@ -1,0 +1,13 @@
+.int-new-item-modal *{
+    font-size: 1.4rem;
+    color: $black-color;
+}
+.int-new-item-modal button{
+    color: $white-color;
+}
+.int-new-item-modal{
+    width: 100vw;
+}
+.modal-backdrop{
+    max-width: 100vw;
+}

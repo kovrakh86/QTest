@@ -1,0 +1,4 @@
+// We need this file to get RTE styles worked in back-office:
+// because RTE doesn't support 2 levels for styles isolation (.pcg-page-wrapper .pcg-rte-wrapper)
+// so styles in this file wont'be wrapped with .pcg-page-wrapper (see webpack\bundlers\scripts.bundler.js for details).
+@import "styles";

@@ -1,0 +1,36 @@
+.int-submenu {
+    ul {
+        padding: 0;
+        margin: 0;
+    }
+}
+    .int-submenu__item{
+        list-style: none;
+        font-size: 1.2rem;
+        line-height: 3rem;
+        @media screen and (min-width: 850px){
+            font-size: 1.4rem;
+        }
+    }
+    .int-submenu__link{
+        color: $font-dark;
+        padding-left: 2rem;
+        position: relative;
+
+        &:hover,
+        &:focus{
+            color: $black-color;
+        }
+        &:focus:before{
+            content: "";
+            height: 3rem;
+            border: 2px solid $font-dark;
+            position: absolute;
+            left: 0;
+
+        }
+        strong{
+            color: $black-color;
+        }
+    }
+

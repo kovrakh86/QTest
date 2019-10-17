@@ -1,0 +1,39 @@
+.int-post-managment{
+    padding: .5rem 2.5rem;
+    *{
+        color: $font-dark;
+    }
+}
+.int-post-managment>*{
+    padding: 0;
+}
+.row{
+    margin: auto;
+}
+.int-search{
+    position: relative;
+    margin: 0;
+}
+.int-search__input{
+    font-size: 1.4rem;
+    height: 4rem;
+}
+.int-search__icon{
+
+    @media screen and (min-width: 768px){
+        position: absolute;
+        right: 0;
+    }
+}
+.int-add__text{
+    font-size: 1.4rem;
+    vertical-align: super;
+}
+.int-add:hover{
+    *{
+        color: $grey-color;
+    }
+}
+.icon-filter:hover{
+    color: $grey-color;
+}

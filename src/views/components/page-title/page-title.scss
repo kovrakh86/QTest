@@ -1,0 +1,25 @@
+.int-page-title{
+    text-align: center;
+    background-color: $white-color;
+    @media screen and (min-width: 768px){
+        text-align: left;
+    }
+    *{
+        color: $main-theme-color;
+        font-size: 4.5rem;
+    }
+}
+.int-page-title__heading{
+    margin: 0;
+    padding: 1.5rem;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    @media screen and (min-width: 768px){
+        padding: 2.5rem;
+    }
+}
+.int-page-title__city{
+    border-bottom: .2rem dashed $main-theme-color;
+}
+.int-page-title__city:focus, .int-page-title__city:hover{
+    color: $main-theme-color;
+}
