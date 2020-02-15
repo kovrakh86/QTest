@@ -58,6 +58,6 @@
     "popper.js": "1.15.0",
     "slick-carousel": "1.8.1",
     "tether": "1.4.7",
-    "yarn": "^1.19.1"
+    "yarn": "^1.22.0"
   }
 }
